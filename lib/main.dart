@@ -2,7 +2,8 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/layout/desktop.dart';
 import 'package:portfolio/layout/mobile.dart';
-import 'package:portfolio/ui/views/home_view.dart';
+import 'package:portfolio/ui/views/home/home_view.dart';
+
 
 //This is an app intended to be a portfolio site responsive to Screen sizes by following principles found here
 // -https://medium.com/flutter-community/developing-for-multiple-screen-sizes-and-orientations-in-flutter-fragments-in-flutter-a4c51b849434
