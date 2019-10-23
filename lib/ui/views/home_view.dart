@@ -4,7 +4,7 @@ import 'package:portfolio/ui/base_widget.dart';
 class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BaseWidget(
+    return ResponsiveBuilder(
       builder: (context, sizingInformation) {
         return Scaffold(
           body: Center(
@@ -16,7 +16,7 @@ class HomeView extends StatelessWidget {
                   
                   color: Colors.blue,
                   //margin: EdgeInsets.all(75),
-                  child: BaseWidget(
+                  child: ResponsiveBuilder(
                     builder: (context, sizingInfo) => Text(
                       sizingInfo.toString(),
                     ),
