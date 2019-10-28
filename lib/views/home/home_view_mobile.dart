@@ -7,6 +7,7 @@ class HomeMobilePortrait extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.red,
       drawer: AppDrawer(),
       key: _scaffoldKey,
       body: Column(

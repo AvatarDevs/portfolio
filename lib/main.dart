@@ -10,13 +10,13 @@ import 'views/home/home_view.dart';
 //This is an app intended to be a portfolio site responsive to Screen sizes by following principles found here
 // -https://medium.com/flutter-community/developing-for-multiple-screen-sizes-and-orientations-in-flutter-fragments-in-flutter-a4c51b849434
 
-void main() => runApp(DevicePreview(builder: (context)=> MyApp()));
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      builder: DevicePreview.appBuilder,
+     // builder: DevicePreview.appBuilder,
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

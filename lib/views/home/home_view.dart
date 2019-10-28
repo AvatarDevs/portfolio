@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/responsive/orientation_layout.dart';
 import 'package:portfolio/responsive/responsive_builder.dart';
 import 'package:portfolio/responsive/screen_type_layout.dart';
+import 'package:portfolio/views/home/home_view_desktop.dart';
 
 import 'home_view_mobile.dart';
 import 'home_view_tablet.dart';
@@ -16,6 +17,7 @@ class HomeView extends StatelessWidget {
         landscape: HomeMobileLandscape(),
       ),
       tablet: HomeViewTablet(),
+      desktop: HomeViewDesktop(),
     );
   }
 }

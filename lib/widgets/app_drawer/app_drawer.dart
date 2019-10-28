@@ -10,6 +10,9 @@ class AppDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
   return ScreenTypeLayout(
+    //drawer uses the same layout for mobile orientations,
+    //whereas tablet uses a different drawer depending on orientation
+    //
     mobile: AppDrawerMobile(),
     tablet: OrientationLayout(
       portrait: AppDrawerTabletPortrait(),
