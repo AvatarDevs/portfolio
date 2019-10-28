@@ -4,6 +4,7 @@ import 'package:portfolio/responsive/responsive_builder.dart';
 import 'package:portfolio/responsive/screen_type_layout.dart';
 
 import 'home_view_mobile.dart';
+import 'home_view_tablet.dart';
 
 
 class HomeView extends StatelessWidget {
@@ -12,7 +13,9 @@ class HomeView extends StatelessWidget {
     return ScreenTypeLayout(
       mobile: OrientationLayout(
         portrait: HomeMobilePortrait(),
+        landscape: HomeMobileLandscape(),
       ),
+      tablet: HomeViewTablet(),
     );
   }
 }

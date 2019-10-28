@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/app_drawer/app_drawer.dart';
 
 class HomeMobilePortrait extends StatelessWidget {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
@@ -6,6 +7,7 @@ class HomeMobilePortrait extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: AppDrawer(),
       key: _scaffoldKey,
       body: Column(
         children: <Widget>[
@@ -21,6 +23,19 @@ class HomeMobilePortrait extends StatelessWidget {
               },
             ),
           )
+        ],
+      ),
+    );
+  }
+}
+
+class HomeMobileLandscape extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Row(
+        children: <Widget>[
+          AppDrawer(),
         ],
       ),
     );
