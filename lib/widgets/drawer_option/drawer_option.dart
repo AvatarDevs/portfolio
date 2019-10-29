@@ -19,12 +19,23 @@ class DrawerOption extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: OrientationLayout(
-        landscape: DrawerOptionMobileLandscape(),
-        portrait: DrawerOptionMobilePortrait(),
+        landscape: DrawerOptionMobileLandscape(
+          iconData: iconData,
+        ),
+        portrait: DrawerOptionMobilePortrait(
+          title: title,
+          iconData: iconData,
+        ),
       ),
       tablet: OrientationLayout(
-        landscape: DrawerOptionTabletLandscape(),
-        portrait: DrawerOptionTabletPortrait(),
+        landscape: DrawerOptionTabletPortrait(
+          title: title,
+          iconData: iconData,
+        ),
+        portrait: DrawerOptionTabletPortrait(
+          title: title,
+          iconData: iconData,
+        ),
       ),
     );
   }

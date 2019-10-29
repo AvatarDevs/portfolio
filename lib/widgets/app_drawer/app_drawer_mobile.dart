@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'app_drawer.dart';
+
 class AppDrawerMobile extends StatelessWidget {
  @override
   Widget build(BuildContext context) {
@@ -11,7 +13,7 @@ class AppDrawerMobile extends StatelessWidget {
           blurRadius: 16,
           color: Colors.black12,
         )
-      ]),
+      ]),child: Column(children: AppDrawer.getDrawerOptions(),),
     );
   }
 }

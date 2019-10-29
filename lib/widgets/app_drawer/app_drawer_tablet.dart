@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/app_drawer/app_drawer.dart';
 
 class AppDrawerTabletPortrait extends StatelessWidget {
   @override
@@ -10,7 +11,7 @@ class AppDrawerTabletPortrait extends StatelessWidget {
           blurRadius: 16,
           color: Colors.black12,
         ),
-      ]),
+      ]),child: Row(children: AppDrawer.getDrawerOptions(),),
     );
   }
 }
@@ -25,7 +26,7 @@ class AppDrawerTabletLandscape extends StatelessWidget {
           blurRadius: 16,
           color: Colors.black12,
         ),
-      ]),
+      ]),child: Column(children: AppDrawer.getDrawerOptions(),),
     );
   }
 }
