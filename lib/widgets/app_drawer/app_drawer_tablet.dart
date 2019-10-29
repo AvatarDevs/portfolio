@@ -19,7 +19,7 @@ class AppDrawerTabletLandscape extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 250,
+      width: 150,
       decoration: BoxDecoration(color: Colors.green, boxShadow: [
         BoxShadow(
           blurRadius: 16,
