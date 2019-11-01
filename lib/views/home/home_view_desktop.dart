@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/app_drawer/app_drawer_desktop.dart';
+import 'package:portfolio/widgets/content/constrained_view.dart';
+import 'package:portfolio/widgets/content/content.dart';
 
 class HomeViewDesktop extends StatelessWidget {
   @override
@@ -8,7 +10,7 @@ class HomeViewDesktop extends StatelessWidget {
       appBar: AppBar(),
       drawer: AppDrawerDesktop(),
       backgroundColor: Colors.orange,
-      body: Center(child: Text("Desktop")),
+      body: ConstrainedView(child: Content(),),
     );
   }
 }
